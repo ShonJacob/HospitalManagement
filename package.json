@@ -4,25 +4,24 @@
   "description": "Hospital Management System",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "tsc": "tsc",
+    "prod": "node index.js"
   },
-  "author": "Shon, Jeejin, Surya, Vignesh, AYTech",
+  "author": "Shon, AYTech",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.0.0",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "express-async-errors": "^3.1.1",
     "joi": "^17.3.0",
     "jsonwebtoken": "^8.5.1",
-    "lodash": "^4.17.20",
-    "mysql": "^2.18.1",
+    "morgan": "^1.10.0",
     "mysql2": "^2.2.5",
-    "sequelize": "^6.3.5",
-    "winston": "^3.3.3",
-    "winston-mysql": "^0.9.0"
+    "sequelize": "^6.3.5"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"
