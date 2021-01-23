@@ -24,7 +24,6 @@ const saveToken = async function (data) {
     `select user_id from jwt where user_id = ?`,
     [data.user_id]
   );
-  console.log("EXISTING", existingJWT);
   if (existingJWT) {
     const deleted = await promisePool.query(
       `delete from jwt where user_id = ?`,
